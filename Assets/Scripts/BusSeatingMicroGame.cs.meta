@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 855dac465ab67bc478996549878188cb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - seatPrefab: {instanceID: 0}
+  - occupiedPersonPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
