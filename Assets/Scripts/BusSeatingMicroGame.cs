@@ -8,9 +8,11 @@ namespace SuomiPeli
         [Header("Bus Configuration")]
         [SerializeField] private GameObject seatPrefab;
         [SerializeField] private GameObject occupiedPersonPrefab;
-        [SerializeField] private int totalSeats = 12;
-        [SerializeField] private int rowCount = 4;
+        [SerializeField] private int totalSeats = 24;
+        [SerializeField] private int rowCount = 8;
         [SerializeField] private float seatSpacing = 1.5f;
+        [SerializeField] private int maxOccupants = 8;
+        [SerializeField] private int minOccupants = 5;
 
         private GameObject[] seats;
         private bool[] seatOccupied;
@@ -64,7 +66,7 @@ namespace SuomiPeli
 
         private void PlaceRandomOccupants()
         {
-            int occupantCount = Random.Range(2, Mathf.Min(5, totalSeats - 1));
+            int occupantCount = Random.Range(minOccupants, Mathf.Min(maxOccupants, totalSeats - 1));
 
             for (int i = 0; i < occupantCount; i++)
             {
